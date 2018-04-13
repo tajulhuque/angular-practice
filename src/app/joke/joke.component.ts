@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JokeComponent implements OnInit {
 
-  joke: string
+  joke: object;
 
   constructor() {
-    this.joke = 'what did the cheese say?';
+    this.joke = {
+      setup: 'What did the cheese say when it looked in the mirror?',
+      punchline: 'Hallumi'
+    };
   }
 
   ngOnInit() {
