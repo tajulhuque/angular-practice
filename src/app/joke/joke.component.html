@@ -7,16 +7,20 @@
       {{joke.setup}}
     </div>
 
+    <button
+      class="btn btn-primary"
+      (click)="joke.toggle()">
+      {{joke.msgText}}
+    </button>
+
+    <br /><br />
+
     <div
       class="card-text"
       [hidden]="joke.hide">
       {{joke.punchline}}
     </div>
-    <button
-      class="btn btn-primary"
-      (click)="joke.hide=!joke.hide">
-      Tell Me
-    </button>
+
 
   </div>
 
