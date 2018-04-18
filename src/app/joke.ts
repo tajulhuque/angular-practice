@@ -15,12 +15,8 @@ export class Joke {
   toggle() {
     this.hide = !this.hide;
 
-    // this.msgText = this.hide ? 'Show Me!' : 'Hide'
+    this.msgText = this.hide ? 'Show Me!' : 'Hide';
 
-    if (this.hide) {
-      this.msgText = 'Show Me!';
-    } else {
-      this.msgText = 'Hide';
-    }
+
   }
 }

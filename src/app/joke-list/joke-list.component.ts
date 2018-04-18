@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Joke} from '../joke';
 
 @Component({
   selector: 'app-joke-list',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JokeListComponent implements OnInit {
 
-  constructor() { }
+  jokes: Joke[];
+
+  constructor() {
+    this.jokes = [
+      new Joke( 'Joke 1', 'Answer 1'),
+      new Joke('Joke 2', 'Answer 2'),
+      new Joke('Joke 2', 'Answer 3')
+      ];
+  }
 
   ngOnInit() {
   }
