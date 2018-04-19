@@ -1,3 +1,9 @@
+
 p {
   background-color: burlywood;
+}
+
+.card {
+  margin-top: 10px;
+  padding: 10px;
 }

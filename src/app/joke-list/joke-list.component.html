@@ -1,3 +1,8 @@
-<div *ngFor="let joke of jokes">
-  {{joke.setup}}
-</div>
+
+
+<app-joke-form></app-joke-form>
+
+<app-joke *ngFor="let j of jokes" [joke]="j">
+</app-joke>
+
+
